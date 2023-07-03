@@ -1,26 +1,26 @@
 import React from 'react'
 import Section from "./common/Section"
-import { FaTwitter, FaFacebook, FaLinkedin, FaArrowDown} from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaArrowDown} from "react-icons/fa";
 import contact from "../assests/mobile.png";
 
 const Contact = () => {
   const SOCIAL = [
     {    
     id: 1,
-    link: "https://twitter.com",
+    link: "https://twitter.com/ShreeMahak",
     icon: <FaTwitter />,
     },
     {
     id: 2,
-    link: "https://facebook.com",
-    icon: <FaFacebook />,
+    link: "https://github.com/Mahak491",
+    icon: <FaGithub />,
     },
     {
     id: 3,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/mahak-shree-3398a21a3/",
     icon: <FaLinkedin />,
     },
-  ];
+  ]
   return (
     <Section title="Contact📞"
     subtitle="These are the ways you can get in touch with me. Hope to hear from you soon 🙂">
