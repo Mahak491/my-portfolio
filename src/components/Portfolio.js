@@ -1,12 +1,12 @@
 import React from 'react'
 import Section from './common/Section'
 import { FaGithub, FaExternalLinkSquareAlt} from "react-icons/fa";
-import p1 from "../assests/p1.jpg";
-import p2 from "../assests/p2.jpg";
-import p3 from "../assests/p3.jpg";
-import p4 from "../assests/p4.jpg"; 
-import p5 from "../assests/p5.jpg"; 
-
+import p1 from "../assests/p1.png";
+import p2 from "../assests/p2.png";
+import p3 from "../assests/p3.png";
+import p4 from "../assests/p4.png"; 
+import p5 from "../assests/p5.png"; 
+import p6 from "../assests/p6.png";
 
 const Portfolio = () => {
 
@@ -29,7 +29,7 @@ const Portfolio = () => {
             id: 3,
             image:p3,
             title:"Openboard clone",
-            github:"",
+            github:"https://github.com/Mahak491/my-openboard-clone",
             demo:""
         },
         {
@@ -40,13 +40,19 @@ const Portfolio = () => {
             demo:"https://keen-pixie-418051.netlify.app/"
         },
         {
-            id: 5,
+            id: 6,
             image:p5,
             title:"Makeup Cart",
-            github:"",
+            github:"https://github.com/Mahak491/shopping-cart",
             demo:"https://cool-cocada-d5be8f.netlify.app/index.html"
         },
-        
+        {
+            id: 6,
+            image:p6,
+            title:"Crypto Web App",
+            github:"https://github.com/Mahak491/crypto-app",
+            demo:""
+        }
     ]
   return (
     <Section title="Portfolio👩‍💻"
