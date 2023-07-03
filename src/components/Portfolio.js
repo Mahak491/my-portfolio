@@ -6,7 +6,7 @@ import p2 from "../assests/p2.jpg";
 import p3 from "../assests/p3.jpg";
 import p4 from "../assests/p4.jpg"; 
 import p5 from "../assests/p5.jpg"; 
-import p6 from "../assests/p6.jpg";
+
 
 const Portfolio = () => {
 
@@ -14,16 +14,16 @@ const Portfolio = () => {
         {
             id: 1,
             image:p1,
-            title:"Openboard clone",
-            github:"",
-            demo:""
+            title:"Sorting Visualizer",
+            github:"https://github.com/Mahak491/sorting_visualizer",
+            demo:"https://visualizerrrsorting.netlify.app/"
         },
         {
             id: 2,
             image:p2,
-            title:"Openboard clone",
-            github:"",
-            demo:""
+            title:"Camera Web App",
+            github:"https://github.com/Mahak491/Camera_Gallery",
+            demo:"https://cameragalleryyy.netlify.app/"
         },
         {
             id: 3,
@@ -35,29 +35,24 @@ const Portfolio = () => {
         {
             id: 4,
             image:p4,
-            title:"Openboard clone",
-            github:"",
-            demo:""
+            title:"Weather Web App",
+            github:"https://github.com/Mahak491/weather-web-app",
+            demo:"https://keen-pixie-418051.netlify.app/"
         },
         {
             id: 5,
             image:p5,
-            title:"Openboard clone",
+            title:"Makeup Cart",
             github:"",
-            demo:""
+            demo:"https://cool-cocada-d5be8f.netlify.app/index.html"
         },
-        {
-            id: 6,
-            image:p6,
-            title:"Openboard clone",
-            github:"",
-            demo:""
-        }
+        
     ]
   return (
     <Section title="Portfolio👩‍💻"
 subtitle="These are all the projects that I have worked on. Some of them I have worked 
 before I gained some experience. So go gentle on them.">
+    <br/>
     <div className='grid gap-8 lg:gap-14 lg:grid-cols-2' >
     {projects.map(({id,image,title,github,demo})=>(
         <div key={id} className='max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden'>

@@ -24,6 +24,7 @@ const Contact = () => {
   return (
     <Section title="Contact📞"
     subtitle="These are the ways you can get in touch with me. Hope to hear from you soon 🙂">
+      <br/>
       <div className='flex flex-col items-center justify-center gap-8 text-center'>
         <div>
           <img src={contact} alt="contact info" className='w-32 h-32'/></div>
@@ -36,7 +37,7 @@ const Contact = () => {
             ))}
           </div>
           <div className='p-8 text-left w-full'>
-            <form action="" method="POST">
+            <form action="https://getform.io/f/b62ff513-e8d2-4e1b-bfe6-80673a0a5fb9" method="POST">
               <div className=' w-full'>
                 <div className='flex flex-col'>
                   <label className='capitalize text-sm py-2 font-extralight'>name</label>
