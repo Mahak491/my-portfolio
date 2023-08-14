@@ -16,7 +16,7 @@ const Portfolio = () => {
             image:p1,
             title:"Sorting Visualizer",
             github:"https://github.com/Mahak491/sorting_visualizer",
-            demo:"https://visualizerrrsorting.netlify.app/"
+            demo:"https://sortttingvisualizerrr.netlify.app/"
         },
         {
             id: 2,

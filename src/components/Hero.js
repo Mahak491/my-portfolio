@@ -33,8 +33,7 @@ window.addEventListener("scroll", function () {
         <h3 className="py-3 text-2xl">Developer</h3>
         <p className="max-w-xl font-light text-gray-500">
         Hello <span className="animate-pulse text-4xl">👋</span>, welcome to my
-        site. I love to work on Web dev
-         & automation projects.
+        site. Bridging the gap between design and development, I specialize in shaping SaaS applications with an artistic touch and code precision.
         </p>
         <div className="flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3">
         {SOCIAL.map(({ id, link, icon }) => (
@@ -49,7 +48,7 @@ window.addEventListener("scroll", function () {
         </div>
         <div >
             <img src={avatar} alt className="w-60 h-60 md:w-70 object-cover object-top bg-gradient-to-b from-rose-600 rounded-xl pt-5"/>
-        <a href="/Mahak_res.pdf"
+        <a href="/Mahak_Shree_Resumee.pdf"
         download={true}
         className="flex items-center justify-center mt-10 bg-gradient-to-r from-rose-600
         to-teal-500 text-white py-2 rounded-lg">
