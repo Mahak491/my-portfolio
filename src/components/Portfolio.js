@@ -1,85 +1,367 @@
-import React from 'react'
-import Section from './common/Section'
-import { FaGithub, FaExternalLinkSquareAlt} from "react-icons/fa";
-import p1 from "../assests/p1.png";
-import p2 from "../assests/p2.png";
-import p3 from "../assests/p3.png";
-import p4 from "../assests/p4.png"; 
-import p5 from "../assests/p5.png"; 
-import p6 from "../assests/p6.png";
+import Section from "./common/Section";
+import {
+    FaGithub,
+    FaExternalLinkSquareAlt,
+    FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const Portfolio = () => {
-
     const projects = [
         {
-            id: 1,
-            image:p1,
-            title:"Sorting Visualizer",
-            github:"https://github.com/Mahak491/sorting_visualizer",
-            demo:"https://sortttingvisualizerrr.netlify.app/"
+            id: "01",
+            category: "PROFESSIONAL · ENTERPRISE · FULL STACK",
+            title: "Dredging Corporation of India (DCI)",
+            description:
+                "Enterprise management platform developed for Dredging Corporation of India using a microservices-based architecture. Contributed to a Turborepo monorepo with module federation for scalable and modular frontend development, building modules for management, assets, inventory, administration, and depot operations. Implemented authentication, role-based permissions, API integration, and state management. On the backend, worked with Redis for caching and real-time synchronization, RabbitMQ for event-driven notifications, and WebSockets for real-time communication.",
+            stack: [
+                "React.js",
+                "Next.js",
+                "TypeScript",
+                "Turborepo",
+                "Module Federation",
+                "Tailwind CSS",
+                "Redux Toolkit",
+                "Zustand",
+                "TanStack Query",
+                "Redis",
+                "RabbitMQ",
+                "WebSockets",
+                "REST APIs",
+            ],
+            github: "",
+            demo: "",
         },
-        {
-            id: 2,
-            image:p2,
-            title:"Camera Web App",
-            github:"https://github.com/Mahak491/Camera_Gallery",
-            demo:"https://cameragalleryyy.netlify.app/"
-        },
-        {
-            id: 3,
-            image:p3,
-            title:"Openboard clone",
-            github:"https://github.com/Mahak491/my-openboard-clone",
-            demo:""
-        },
-        {
-            id: 4,
-            image:p4,
-            title:"Weather Web App",
-            github:"https://github.com/Mahak491/weather-web-app",
-            demo:"https://keen-pixie-418051.netlify.app/"
-        },
-        {
-            id: 6,
-            image:p5,
-            title:"Makeup Cart",
-            github:"https://github.com/Mahak491/shopping-cart",
-            demo:"https://cool-cocada-d5be8f.netlify.app/index.html"
-        },
-        {
-            id: 6,
-            image:p6,
-            title:"Crypto Web App",
-            github:"https://github.com/Mahak491/crypto-app",
-            demo:""
-        }
-    ]
-  return (
-    <Section title="Portfolio👩‍💻"
-subtitle="These are all the projects that I have worked on. Some of them I have worked 
-before I gained some experience. So go gentle on them.">
-    <br/>
-    <div className='grid gap-8 lg:gap-14 lg:grid-cols-2' >
-    {projects.map(({id,image,title,github,demo})=>(
-        <div key={id} className='max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden'>
-            <img src={image} alt={title} className='w-2/3'/>
-            <div className='w-1/3 flex flex-col items-center justify-evenly p-1'>
-                <h2>{title}</h2>
-                <a className='text-2xl cursor-pointer duration-150 hover:scale-110' href={github} target = '_blank' rel='noopener noreferrer'>
-                    <FaGithub/>
 
-                </a>
-                <a  className='text-2xl cursor-pointer duration-150 hover:scale-110' href={demo} target = '_blank' rel='noopener noreferrer'>
-                <FaExternalLinkSquareAlt/>
-                </a>
-                </div>
-        </div>
-    ))}
-    </div>
-    </Section>
-  )
-}
-
-export default Portfolio
+        {
+            id: "02",
+            category: "PROFESSIONAL · FULL STACK · NEXT.JS",
+            title: "Depot Management System",
+            description:
+                "Full-stack depot management platform built with Next.js and TypeScript for managing depot operations and organizational workflows. Developed responsive frontend modules with authentication, role-based permissions, persistent state management, and efficient client-side data handling. Also contributed to backend development by designing and implementing REST APIs, integrating frontend workflows with backend services, and handling data validation and API error scenarios.",
+            stack: [
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Redux Toolkit",
+                "Redux Persist",
+                "IndexedDB",
+                "TanStack Query",
+                "REST APIs",
+                "Backend Services",
+            ],
+            github: "",
+            demo: "",
+        },
 
 
+        {
+            id: "03",
+            category: "PROFESSIONAL · FRONTEND",
+            title: "Altiux Project",
+            description:
+                "Frontend development work focused on responsive interfaces, reusable components, API integration, debugging, and building maintainable web application experiences.",
+            stack: [
+                "React.js",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "REST APIs",
+            ],
+            github: "",
+            demo: "https://www.altiux.com/",
+        },
+
+        {
+            id: "04",
+            category: "PROFESSIONAL · FRONTEND",
+            title: "KarmaLifeAI Project",
+            description:
+                "Frontend development experience gained in a startup environment, contributing to responsive web interfaces, reusable components, styling, and professional development workflows.",
+            stack: [
+                "React.js",
+                "JavaScript",
+                "HTML",
+                "CSS",
+            ],
+            github: "",
+            demo: "https://karmalife.ai/",
+        },
+
+        {
+            id: "05",
+            category: "FREELANCE · WORDPRESS",
+            title: "Freelance Website",
+            description:
+                "Client website developed using WordPress with responsive layouts, customized components, content management, website configuration, and production deployment.",
+            stack: [
+                "WordPress",
+                "HTML",
+                "CSS",
+                "Responsive Design",
+            ],
+            github: "",
+            demo: "",
+        },
+    ];
+
+    return (
+        <Section
+            title="Selected Work"
+            subtitle="A selection of professional and freelance projects I've contributed to throughout my development journey."
+        >
+            <div className="mt-12 space-y-7">
+
+                {projects.map(
+                    ({
+                        id,
+                        category,
+                        title,
+                        description,
+                        stack,
+                        github,
+                        demo,
+                    }) => (
+                        <article
+                            key={id}
+                            className="
+                group relative overflow-hidden
+                rounded-3xl
+                border border-gray-200
+                dark:border-gray-700
+                bg-white
+                dark:bg-gray-900
+                p-6 md:p-8
+                transition-all duration-500
+                hover:-translate-y-1
+                hover:shadow-2xl
+                hover:shadow-indigo-500/10
+              "
+                        >
+
+                            {/* Background number */}
+                            <div
+                                className="
+                  absolute -right-4 -top-10
+                  text-[140px] md:text-[180px]
+                  font-bold
+                  text-gray-100
+                  dark:text-gray-800
+                  leading-none
+                  select-none
+                  pointer-events-none
+                  transition-all duration-500
+                  group-hover:text-indigo-100
+                  dark:group-hover:text-gray-800
+                  group-hover:scale-110
+                "
+                            >
+                                {id}
+                            </div>
+
+                            <div className="relative z-10">
+
+                                {/* Header */}
+                                <div className="relative">
+
+                                    {/* Centered heading */}
+                                    <div className="text-center px-12">
+
+                                        <span
+                                            className="
+                        inline-block
+                        text-xs
+                        font-semibold
+                        tracking-[0.2em]
+                        text-indigo-600
+                        dark:text-indigo-400
+                        mb-3
+                      "
+                                        >
+                                            {category}
+                                        </span>
+
+                                        <h3
+                                            className="
+                        text-2xl md:text-3xl
+                        font-bold
+                        text-gray-900
+                        dark:text-white
+                        tracking-tight
+                        transition-colors duration-300
+                        group-hover:text-indigo-600
+                        dark:group-hover:text-indigo-400
+                      "
+                                        >
+                                            {title}
+                                        </h3>
+                                    </div>
+
+                                    {/* Project links */}
+                                    <div
+                                        className="
+                      absolute
+                      right-0
+                      top-0
+                      flex
+                      items-center
+                      gap-2
+                    "
+                                    >
+                                        {github && (
+                                            <a
+                                                href={github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`${title} GitHub`}
+                                                className="
+                          w-10 h-10
+                          rounded-full
+                          border border-gray-200
+                          dark:border-gray-700
+                          flex items-center justify-center
+                          text-gray-600
+                          dark:text-gray-400
+                          hover:bg-indigo-600
+                          hover:text-white
+                          hover:border-indigo-600
+                          transition-all duration-300
+                        "
+                                            >
+                                                <FaGithub />
+                                            </a>
+                                        )}
+
+                                        {demo && (
+                                            <a
+                                                href={demo}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`${title} live website`}
+                                                className="
+                          w-10 h-10
+                          rounded-full
+                          border border-gray-200
+                          dark:border-gray-700
+                          flex items-center justify-center
+                          text-gray-600
+                          dark:text-gray-400
+                          hover:bg-indigo-600
+                          hover:text-white
+                          hover:border-indigo-600
+                          transition-all duration-300
+                        "
+                                            >
+                                                <FaExternalLinkSquareAlt />
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+
+                                {/* Divider */}
+                                <div
+                                    className="
+                    mt-6
+                    h-px
+                    bg-gray-100
+                    dark:bg-gray-800
+                  "
+                                />
+
+                                {/* Description */}
+                                <p
+                                    className="
+                    mt-6
+                    max-w-3xl
+                    mx-auto
+                    text-center
+                    text-gray-600
+                    dark:text-gray-400
+                    leading-7
+                    text-sm md:text-base
+                  "
+                                >
+                                    {description}
+                                </p>
+
+                                {/* Bottom section */}
+                                <div
+                                    className="
+                    mt-7
+                    pt-5
+                    border-t
+                    border-gray-100
+                    dark:border-gray-800
+                    flex
+                    flex-col
+                    md:flex-row
+                    md:items-center
+                    md:justify-between
+                    gap-5
+                  "
+                                >
+
+                                    {/* Tech stack */}
+                                    <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                                        {stack.map((technology) => (
+                                            <span
+                                                key={technology}
+                                                className="
+                          px-3 py-1.5
+                          rounded-full
+                          bg-gray-50
+                          dark:bg-gray-800
+                          border
+                          border-gray-200
+                          dark:border-gray-700
+                          text-xs
+                          font-medium
+                          text-gray-600
+                          dark:text-gray-300
+                          transition-all duration-300
+                          group-hover:border-indigo-200
+                          dark:group-hover:border-indigo-800
+                        "
+                                            >
+                                                {technology}
+                                            </span>
+                                        ))}
+                                    </div>
+
+                                    {/* View project */}
+                                    {demo && (
+                                        <a
+                                            href={demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="
+                        inline-flex
+                        items-center
+                        justify-center
+                        gap-2
+                        text-sm
+                        font-semibold
+                        text-gray-700
+                        dark:text-gray-300
+                        whitespace-nowrap
+                        hover:text-indigo-600
+                        dark:hover:text-indigo-400
+                        transition-colors duration-300
+                      "
+                                        >
+                                            View project
+                                            <FaExternalLinkAlt className="text-xs" />
+                                        </a>
+                                    )}
+
+                                </div>
+                            </div>
+                        </article>
+                    )
+                )}
+
+            </div>
+        </Section>
+    );
+};
+
+export default Portfolio;

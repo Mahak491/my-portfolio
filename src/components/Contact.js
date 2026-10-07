@@ -1,4 +1,3 @@
-import React from 'react'
 import Section from "./common/Section"
 import { FaTwitter, FaGithub, FaLinkedin, FaArrowDown} from "react-icons/fa";
 import contact from "../assests/mobile.png";
